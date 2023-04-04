@@ -3,6 +3,7 @@ using AppRgpEtec.Services.Usuarios;
 using AppRgpEtec.Views.Usuarios;
 using System.Windows.Input;
 using AppRgpEtec.Helpers.Message;
+using Plugin.Media;
 
 namespace AppRgpEtec.ViewModels.Usuarios
 {
@@ -103,10 +104,10 @@ namespace AppRgpEtec.ViewModels.Usuarios
                     Preferences.Set("UsuarioPerfil", uAutenticado.Perfil);
                     Preferences.Set("UsuarioToken", uAutenticado.Token);
 
-                    Models.Email email= new Models.Email();
-                    email.Remetente = "guilhermeamorimasilva@gmail.com";
-                    email.RemetentePassword = "ddvpratzyqezzunu";
-                    email.Destinatario= "guilhermeamorimasilva@gmail.com";
+                    Models.Email email = new Models.Email();
+                    // email.Remetente = "Email";
+                    // email.RemetentePassword = "Senha do App";
+                    //email.Destinatario = "Email";
                     email.DominioPrimario = "smtp.gmail.com";
                     email.PortaPrimaria = 587;
                     email.Assunto = "Notificação de acesso";
@@ -148,6 +149,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
                     .DisplayAlert("Informação", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
             }
         }
+
 
     }
 }

@@ -48,6 +48,10 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Platforms\Android\Resources\xml\file_paths.xml" />
+	</ItemGroup>
+
 	<!--<ItemGroup>
 	  <None Remove="Resources\AppIcon\has_logo_transparente.svg" />
 	  <None Remove="Resources\Images\etec_cps.svg" />

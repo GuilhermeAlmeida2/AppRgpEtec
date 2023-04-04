@@ -22,6 +22,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
             SalvarImagemCommand = new Command(SalvarImagem);
             FotografarCommand = new Command(Fotografar);
 
+            CarregarUsuario();
 
         }
 
@@ -103,19 +104,67 @@ namespace AppRgpEtec.ViewModels.Usuarios
                 u.Foto = foto;
                 u.Id = Preferences.Get("UsuarioId", 0);
 
-                if(await uService.PutFotoUsuarioAsync(u)!=0)
+                if (await uService.PutFotoUsuarioAsync(u) != 0)
                 {
                     await Application.Current.MainPage.DisplayAlert("Mensagem", "Dados salvos com sucesso!", "Ok");
                     await App.Current.MainPage.Navigation.PopAsync();
                 }
                 else { throw new Exception("Erro ao tentar atualizar imagem"); }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 await Application.Current.MainPage
                     .DisplayAlert("Ops", ex.Message + "Detalhe: " + ex.InnerException, "Ok");
             }
-        } 
+        }
+        public async void AbrirGaleria()
+        {
+            try
+            {
+                //Codifição aqui
+                await CrossMedia.Current.Initialize();
+                if (!CrossMedia.Current.IsPickPhotoSupported)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Galeria não suportada",
+                        "Não existe permissão para acessar a galeria.", "Ok");
+                    return;
+                }
+                var file = await CrossMedia.Current.PickPhotoAsync();
+                if (file == null)
+                    return;
+
+                MemoryStream ms = null;
+                using (ms = new MemoryStream())
+                {
+                    var stream = file.GetStream();
+                    stream.CopyTo(ms);
+                }
+                FonteImagem = ImageSource.FromStream(() => file.GetStream());
+                Foto = ms.ToArray();
+                return;
+
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + "Detalhes" + ex.InnerException, "Ok");
+            }
+        }
+        public async void CarregarUsuario()
+        {
+            try
+            {
+                int usuarioId =Preferences.Get("UsuarioId", 0);
+                Usuario u = await uService.GetUsuarioAsync(usuarioId);
+
+                Foto = u.Foto;
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
     }
 
 }

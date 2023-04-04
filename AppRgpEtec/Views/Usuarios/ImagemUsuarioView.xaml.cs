@@ -1,9 +1,16 @@
+using AppRgpEtec.ViewModels.Usuarios;
+
 namespace AppRgpEtec.Views.Usuarios;
 
 public partial class ImagemUsuarioView : ContentPage
 {
-	public ImagemUsuarioView()
-	{
-		InitializeComponent();
-	}
+    ImagemUsuarioViewModel viewModel;
+    public ImagemUsuarioView()
+    {
+        InitializeComponent();
+
+        viewModel = new ImagemUsuarioViewModel();
+        Title = "Imagem do Usuario";
+        BindingContext = viewModel;
+    }
 }
