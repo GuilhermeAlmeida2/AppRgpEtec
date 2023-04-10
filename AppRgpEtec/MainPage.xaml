@@ -44,15 +44,16 @@
                                 HorizontalTextAlignment="Center" Margin="10,0" />
                         </VerticalStackLayout>
                     </Frame>
+                    
                     <Frame Style="{StaticResource FrameOptions}" Padding="0"
                         HeightRequest="{OnPlatform Android=150, iOS=140}"
                         WidthRequest="{OnPlatform Android=120, iOS=140}">
                         <VerticalStackLayout Spacing="30" VerticalOptions="Center">
                             <Image Source="menuarmas.png" />
-                            <Label Text="Armas" FontSize="Small" HorizontalTextAlignment="Center"
-                                Margin="10,0" />
+                            <Label Text="Armas" FontSize="Small" HorizontalTextAlignment="Center" Margin="10,0" />
                         </VerticalStackLayout>
                     </Frame>
+                    
                     <Frame Style="{StaticResource FrameOptions}" Padding="0"
                         HeightRequest="{OnPlatform Android=150, iOS=140}"
                         WidthRequest="{OnPlatform Android=120, iOS=140}">
@@ -64,10 +65,12 @@
                     </Frame>
                 </HorizontalStackLayout>
             </ScrollView>
+            
             <HorizontalStackLayout Margin="10,100">
                 <Image Source="exit.svg" WidthRequest="50" />
                 <Label Text="Sair" Margin="10,0,0,0" VerticalTextAlignment="Center" />
             </HorizontalStackLayout>
+            
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

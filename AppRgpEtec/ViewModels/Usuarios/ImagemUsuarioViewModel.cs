@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using AppRgpEtec.ViewModels.Usuarios;
 
 namespace AppRgpEtec.ViewModels.Usuarios
 {
@@ -37,7 +38,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
             set
             {
                 fonteImagem = value;
-                OnPropertyChanged();
+                
             }
         }
 
@@ -63,7 +64,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
                     !CrossMedia.Current.IsTakePhotoSupported)
                 {
                     await Application.Current.MainPage.DisplayAlert("Sem Câmera", "A câmera não está disponivel.", "Ok");
-                    await Task.FromResult(false); //using   System.Threading.Tasks;
+                    await Task.FromResult(false); //using System.Threading.Tasks;
 
                 }
                 string FileName = String.Format("{0:ddMMyyy_HHmmss}", DateTime.Now) + ".jpg";
@@ -154,7 +155,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
         {
             try
             {
-                int usuarioId =Preferences.Get("UsuarioId", 0);
+                int usuarioId = Preferences.Get("UsuarioId", 0);
                 Usuario u = await uService.GetUsuarioAsync(usuarioId);
 
                 Foto = u.Foto;

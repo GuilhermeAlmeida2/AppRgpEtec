@@ -68,7 +68,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
 
                 if (uRegistrado.Id != 0)
                 {
-                    string mensagem = $"Usuario Id {uRegistrado.Id} registrado com sucesso.";
+                    string mensagem = $"Usuário Id {uRegistrado.Id} registrado com sucesso.";
                     await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
 
                     await Application.Current.MainPage
@@ -79,7 +79,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Informação", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
 
@@ -94,20 +94,21 @@ namespace AppRgpEtec.ViewModels.Usuarios
                 u.PasswordString = Senha;
 
                 Usuario uAutenticado = await uService.PostAutenticarUsuarioAsync(u);
+               
                 if (!string.IsNullOrEmpty(uAutenticado.Token))
                 {
                     string mensagem = $"Bem-vindo(a) {uAutenticado.Username}. ";
 
                     //Guradando dados do usuário para uso futuro
                     Preferences.Set("UsuarioId", uAutenticado.Id);
-                    Preferences.Set("UsuarioUsename", uAutenticado.Username);
+                    Preferences.Set("UsuarioUsername", uAutenticado.Username);
                     Preferences.Set("UsuarioPerfil", uAutenticado.Perfil);
                     Preferences.Set("UsuarioToken", uAutenticado.Token);
 
                     Models.Email email = new Models.Email();
-                    // email.Remetente = "Email";
-                    // email.RemetentePassword = "Senha do App";
-                    //email.Destinatario = "Email";
+                    email.Remetente = "guilhermeamorimasilva@gmail.com";
+                    email.RemetentePassword = "xzgpgugvrtagcuso";
+                    email.Destinatario = "guilhermeamorimasilva@gmail.com";
                     email.DominioPrimario = "smtp.gmail.com";
                     email.PortaPrimaria = 587;
                     email.Assunto = "Notificação de acesso";
@@ -115,13 +116,12 @@ namespace AppRgpEtec.ViewModels.Usuarios
                         $" em {DateTime.Now:dd/MM/yyyy HH:mm:ss}";
 
                     EmailHelper emailHelper = new EmailHelper();
-                    //await emailHelper.EnviarEmail(email);
+                    await emailHelper.EnviarEmail(email);
 
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
                     Application.Current.MainPage = new AppShell();
-
                 }
                 else
                 {
@@ -146,7 +146,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Informação", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
 

@@ -7,11 +7,13 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
+using AppRgpEtec.Services.Usuarios;
 
 namespace AppRgpEtec.Services
 {
     public class Request
-    {
+        {
+       
         public async Task<int> PostReturnIntAsync<TResult>(string uri, TResult data)
         {
             HttpClient httpClient = new HttpClient();
@@ -48,8 +50,7 @@ namespace AppRgpEtec.Services
         public async Task<int> PutAsync<TResult>(string uri, TResult data, string token)
         {
             HttpClient httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Authorization
-            = new AuthenticationHeaderValue("Bearer", token);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var content = new StringContent(JsonConvert.SerializeObject(data));
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             HttpResponseMessage response = await httpClient.PutAsync(uri, content);
@@ -63,20 +64,16 @@ namespace AppRgpEtec.Services
         public async Task<TResult> GetAsync<TResult>(string uri, string token)
         {
             HttpClient httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Authorization
-            = new AuthenticationHeaderValue("Bearer", token);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             HttpResponseMessage response = await httpClient.GetAsync(uri);
             string serialized = await response.Content.ReadAsStringAsync();
-            TResult result = await Task.Run(() =>
-            JsonConvert.DeserializeObject<TResult>(serialized));
+            TResult result = await Task.Run(() => JsonConvert.DeserializeObject<TResult>(serialized));
             return result;
         }
         public async Task DeleteAsync(string uri, string token)
-        {
-            HttpClient httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Authorization
-            = new AuthenticationHeaderValue("Bearer", token);
+        { HttpClient httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             await httpClient.DeleteAsync(uri);
         }
-    }
+    } 
 }

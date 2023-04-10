@@ -8,6 +8,7 @@ public partial class ImagemUsuarioView : ContentPage
     public ImagemUsuarioView()
     {
         InitializeComponent();
+        
 
         viewModel = new ImagemUsuarioViewModel();
         Title = "Imagem do Usuario";

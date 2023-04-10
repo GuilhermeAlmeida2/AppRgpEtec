@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppRgpEtec.ViewModels.Usuarios
+namespace AppRgpEtec.ViewModels
 {
     public class AppShellViewModel : BaseViewModel
     {
@@ -41,6 +41,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
                     .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
+
 
     }
 }

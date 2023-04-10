@@ -6,22 +6,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using System.Globalization;
 
-namespace AppRgpEtec.Resources.Converters
+namespace AppRgpEtec.Converters
 {
     public class ByteArrayToImageSourceConverter : IValueConverter
     {
         public object Convert(object value, Type targetType,
             object parameter, System.Globalization.CultureInfo culture)
         {
-            ImageSource retSouce = null;
+            ImageSource retSource = null;
             if (value != null)
             {
-                byte[] imagemAsBytes = (byte[])value;
-                retSouce = ImageSource.FromStream(() => new MemoryStream(imagemAsBytes));
+                byte[] imageAsBytes = (byte[])value;
+                retSource = ImageSource.FromStream(() => new MemoryStream(imageAsBytes));
             }
-            return retSouce;
+            return retSource;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

@@ -1,11 +1,19 @@
-﻿namespace AppRgpEtec;
+﻿using AppRgpEtec.ViewModels;
+
+
+namespace AppRgpEtec;
 
 public partial class AppShell : Shell
 {
+	AppShellViewModel viewModel;
 	public AppShell()
 	{
 		InitializeComponent();
-		string login = Preferences.Get("UsuarioUsername",string.Empty);
+
+		viewModel = new AppShellViewModel();
+		BindingContext = viewModel;
+
+		string login = Preferences.Get("UsuarioUsername", string.Empty);
 		lblLogin.Text = $"Login: {login}";
 	}
 }

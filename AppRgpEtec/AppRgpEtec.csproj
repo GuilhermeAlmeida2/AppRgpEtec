@@ -1,22 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
-		<RootNamespace>AppRgpEtec</RootNamespace>
+		<RootNamespace>AppRpgEtect</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>Rgp Etec</ApplicationTitle>
+		<ApplicationTitle>Rpg Etec</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.apprgpetec</ApplicationId>
-		<ApplicationIdGuid>ec7ed0dd-d030-48f6-bfc7-c5b398eff7c5</ApplicationIdGuid>
+		<ApplicationId>com.companyname.apprpgetect</ApplicationId>
+		<ApplicationIdGuid>2ff87844-83fe-4cd3-bb31-ec09de96ccbb</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -32,10 +31,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#FFFFFF" />
+		<MauiIcon Include="Resources\AppIcon\has_logo_transparente.svg" Color="#FFFFFF" />
 
 		<!-- Splash Screen -->
-		<MauiSplah Include="Resources\AppIcon\splash.svg"></MauiSplah>
+		<MauiSplashScreen Include="Resources\Splash\has_logo_transparente.svg" Color="#FFFFFF" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -49,57 +48,49 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Platforms\Android\Resources\xml\file_paths.xml" />
+		<None Remove="Resources\Images\etec_cps.svg" />
+		<None Remove="Resources\Images\exit.svg" />
+		<None Remove="Resources\Images\has_logo_transparente.svg" />
+		<None Remove="Resources\Images\home.svg" />
+		<None Remove="Resources\Images\info.svg" />
+		<None Remove="Resources\Images\menuarmas.svg" />
+		<None Remove="Resources\Images\menudisputas.svg" />
+		<None Remove="Resources\Images\menupersonagens.svg" />
+		<None Remove="Resources\Images\menuusuarios.svg" />
 	</ItemGroup>
-
-	<!--<ItemGroup>
-	  <None Remove="Resources\AppIcon\has_logo_transparente.svg" />
-	  <None Remove="Resources\Images\etec_cps.svg" />
-	  <None Remove="Resources\Images\exit.svg" />
-	  <None Remove="Resources\Images\has_logo_transparente.svg" />
-	  <None Remove="Resources\Images\home.svg" />
-	  <None Remove="Resources\Images\info.svg" />
-	  <None Remove="Resources\Images\menuarmas.svg" />
-	  <None Remove="Resources\Images\menudisputas.svg" />
-	  <None Remove="Resources\Images\menupersonagens.svg" />
-	  <None Remove="Resources\Images\menuusuarios.svg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiImage Include="Resources\AppIcon\has_logo_transparente.svg" />
-	</ItemGroup>-->
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="MongoDB.Bson" Version="2.19.1" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AboutView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="DescriptionView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Disputas\ListagemView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Personagens\ListagemView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Usuarios\CadastroView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Usuarios\ImagemUsuarioView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Usuarios\ListagemView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Usuarios\LoginView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+		<MauiXaml Update="AboutView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="DescriptionView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Disputas\LIstagemView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Personagens\ListagemView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Usuarios\CadastroView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Usuarios\ImagemUsuarioView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Usuarios\ListagemView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Usuarios\LoginView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 
 </Project>
