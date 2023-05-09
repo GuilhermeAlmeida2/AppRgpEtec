@@ -11,7 +11,7 @@
 
     <Shell.Resources>
         <ResourceDictionary>
-            <conv:ByteArrayToImageSourceConverter x:Key="BtyeArrayToImage"></conv:ByteArrayToImageSourceConverter>
+            <conv:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage"/>
         </ResourceDictionary>
     </Shell.Resources>
 
@@ -24,9 +24,8 @@
                     <RowDefinition Height="40"></RowDefinition>
                 </Grid.RowDefinitions>
                 <FlexLayout Grid.Row="0" Direction="Row" AlignItems="Center" >
-                    <Frame Padding="0" CornerRadius="40"
-                        HeightRequest="80" WidthRequest="80" >
-                        
+                    <Frame Padding="0" CornerRadius="40" HeightRequest="80" WidthRequest="80" >
+
                         <Image Source="{Binding Foto, Converter={StaticResource ByteArrayToImage}}"/>
                     </Frame>
                     <VerticalStackLayout Padding="10,0,0,0" Spacing="0">

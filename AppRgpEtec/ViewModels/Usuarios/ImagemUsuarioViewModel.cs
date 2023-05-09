@@ -38,7 +38,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
             set
             {
                 fonteImagem = value;
-                
+                OnPropertyChanged();
             }
         }
 
@@ -60,20 +60,20 @@ namespace AppRgpEtec.ViewModels.Usuarios
                 //Codificação aqui
                 await CrossMedia.Current.Initialize();
 
-                if (!CrossMedia.Current.IsCameraAvailable ||
-                    !CrossMedia.Current.IsTakePhotoSupported)
+                if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                 {
                     await Application.Current.MainPage.DisplayAlert("Sem Câmera", "A câmera não está disponivel.", "Ok");
                     await Task.FromResult(false); //using System.Threading.Tasks;
 
                 }
-                string FileName = String.Format("{0:ddMMyyy_HHmmss}", DateTime.Now) + ".jpg";
+                string fileName = String.Format("{0:ddMMyyy_HHmmss}", DateTime.Now) + ".jpg";
+
                 var file = await CrossMedia.Current.TakePhotoAsync
                     (new Plugin.Media.Abstractions.StoreCameraMediaOptions
                     {
                         Directory = "Fotos",
                         PhotoSize = Plugin.Media.Abstractions.PhotoSize.Small,
-                        Name = FileName
+                        Name = fileName
                     });
                 if (file == null)
 

@@ -94,7 +94,7 @@ namespace AppRgpEtec.ViewModels.Usuarios
                 u.PasswordString = Senha;
 
                 Usuario uAutenticado = await uService.PostAutenticarUsuarioAsync(u);
-               
+
                 if (!string.IsNullOrEmpty(uAutenticado.Token))
                 {
                     string mensagem = $"Bem-vindo(a) {uAutenticado.Username}. ";
@@ -106,9 +106,9 @@ namespace AppRgpEtec.ViewModels.Usuarios
                     Preferences.Set("UsuarioToken", uAutenticado.Token);
 
                     Models.Email email = new Models.Email();
-                    email.Remetente = "guilhermeamorimasilva@gmail.com";
+                     email.Remetente = "guilhermeamorimasilva@gmail.com";
                     email.RemetentePassword = "xzgpgugvrtagcuso";
-                    email.Destinatario = "guilhermeamorimasilva@gmail.com";
+                    email.Destinatario = "guilhermeamarimasilva@gmail.com";
                     email.DominioPrimario = "smtp.gmail.com";
                     email.PortaPrimaria = 587;
                     email.Assunto = "Notificação de acesso";
@@ -116,7 +116,8 @@ namespace AppRgpEtec.ViewModels.Usuarios
                         $" em {DateTime.Now:dd/MM/yyyy HH:mm:ss}";
 
                     EmailHelper emailHelper = new EmailHelper();
-                    await emailHelper.EnviarEmail(email);
+                  //Linha comentada para não receber email no momento de teste.
+                    //  await emailHelper.EnviarEmail(email);
 
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");

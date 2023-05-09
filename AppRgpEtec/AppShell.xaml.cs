@@ -1,5 +1,5 @@
 ﻿using AppRgpEtec.ViewModels;
-
+using AppRpgEtec.Views.Personagens;
 
 namespace AppRgpEtec;
 
@@ -9,7 +9,8 @@ public partial class AppShell : Shell
 	public AppShell()
 	{
 		InitializeComponent();
-
+		Routing.RegisterRoute("cadPersonagemView", typeof(CadastroPersonagemView));
+		
 		viewModel = new AppShellViewModel();
 		BindingContext = viewModel;
 

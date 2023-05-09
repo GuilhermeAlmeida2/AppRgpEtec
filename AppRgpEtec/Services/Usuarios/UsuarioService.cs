@@ -55,7 +55,7 @@ namespace AppRgpEtec.Services.Usuarios
             var usuario = await
             _request.GetAsync<Models.Usuario>(apiUrlBase + urlComplementar, _token);
             return usuario;
-
+            
 
         }
 
