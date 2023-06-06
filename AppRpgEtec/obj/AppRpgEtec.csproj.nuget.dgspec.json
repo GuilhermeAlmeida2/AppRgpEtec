@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gui\\Mobile\\29-05-23\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.csproj": {}
+    "D:\\gui\\Mobile\\05-06-23\\AppRgpEtec\\AppRpgEtec\\AppRpgEtec.csproj": {}
   },
   "projects": {
-    "D:\\gui\\Mobile\\29-05-23\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.csproj": {
+    "D:\\gui\\Mobile\\05-06-23\\AppRgpEtec\\AppRpgEtec\\AppRpgEtec.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gui\\Mobile\\29-05-23\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.csproj",
+        "projectUniqueName": "D:\\gui\\Mobile\\05-06-23\\AppRgpEtec\\AppRpgEtec\\AppRpgEtec.csproj",
         "projectName": "AppRpgEtec",
-        "projectPath": "D:\\gui\\Mobile\\29-05-23\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.csproj",
+        "projectPath": "D:\\gui\\Mobile\\05-06-23\\AppRgpEtec\\AppRpgEtec\\AppRpgEtec.csproj",
         "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-        "outputPath": "D:\\gui\\Mobile\\29-05-23\\AppRpgEtec\\AppRpgEtec\\obj\\",
+        "outputPath": "D:\\gui\\Mobile\\05-06-23\\AppRgpEtec\\AppRpgEtec\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
