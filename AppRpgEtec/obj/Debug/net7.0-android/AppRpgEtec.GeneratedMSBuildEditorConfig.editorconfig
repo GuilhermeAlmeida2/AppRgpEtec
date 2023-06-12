@@ -12,105 +12,105 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = AppRpgEtec
-build_property.ProjectDir = D:\gui\Mobile\05-06-23\AppRgpEtec\AppRpgEtec\
+build_property.ProjectDir = D:\gui\Mobile\12-06-23\AppRgpEtec\AppRpgEtec\
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/AboutView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/AboutView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.AboutView.xaml
 build_metadata.AdditionalFiles.TargetPath = AboutView.xaml
 build_metadata.AdditionalFiles.RelativePath = AboutView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/App.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/AppShell.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/DescriptionView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/DescriptionView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.DescriptionView.xaml
 build_metadata.AdditionalFiles.TargetPath = DescriptionView.xaml
 build_metadata.AdditionalFiles.RelativePath = DescriptionView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/MainPage.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Resources/Styles/Colors.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Resources/Styles/Styles.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Armas/CadastroArmaView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Armas/CadastroArmaView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Armas.CadastroArmaView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Armas\CadastroArmaView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Armas\CadastroArmaView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Armas/ListagemArmaViewModel.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Armas/ListagemArmaViewModel.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Armas.ListagemArmaViewModel.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Armas\ListagemArmaViewModel.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Armas\ListagemArmaViewModel.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Disputas/ListagemView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Disputas/ListagemView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Disputas.ListagemView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Disputas\ListagemView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Disputas\ListagemView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Personagens/CadastroPersonagemView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Personagens/CadastroPersonagemView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Personagens.CadastroPersonagemView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Personagens\CadastroPersonagemView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Personagens\CadastroPersonagemView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Personagens/ListagemView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Personagens/ListagemView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Personagens.ListagemView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Personagens\ListagemView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Personagens\ListagemView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/CadastroView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/CadastroView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Usuarios.CadastroView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\CadastroView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\CadastroView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/ImagemUsuarioView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/ImagemUsuarioView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Usuarios.ImagemUsuarioView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\ImagemUsuarioView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\ImagemUsuarioView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/ListagemView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/ListagemView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Usuarios.ListagemView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\ListagemView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\ListagemView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/LocalizacaoView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/LocalizacaoView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Usuarios.LocalizacaoView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\LocalizacaoView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\LocalizacaoView.xaml
 
-[D:/gui/Mobile/05-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/LoginView.xaml]
+[D:/gui/Mobile/12-06-23/AppRgpEtec/AppRpgEtec/Views/Usuarios/LoginView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppRpgEtec.Views.Usuarios.LoginView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\LoginView.xaml

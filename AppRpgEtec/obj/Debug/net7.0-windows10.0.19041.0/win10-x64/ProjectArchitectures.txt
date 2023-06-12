@@ -1,1 +1,1 @@
-D:\gui\Mobile\05-06-23\AppRgpEtec\AppRpgEtec\AppRpgEtec.csproj;x64
+D:\gui\Mobile\12-06-23\AppRgpEtec\AppRpgEtec\AppRpgEtec.csproj;x64

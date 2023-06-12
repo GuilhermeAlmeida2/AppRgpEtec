@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JthQKDCW2+lvo1py2+hcohbldaP1OunRfrwOTr7sMd5KvFqZ+2bxqYUJ0qbj9dxVfxRIHsMdN0h6JocjPgVVbQ==",
+  "dgSpecHash": "WVHMW+4dJvZ4n9YMFqlwNSnN+ScNF4kVJNIfBnK1wNZoBBtbbHhzvyHmJgQreZgVU/O3zaLOwU5jiPW4ZZ2Vjg==",
   "success": true,
-  "projectFilePath": "D:\\gui\\Mobile\\05-06-23\\AppRgpEtec\\AppRpgEtec\\AppRpgEtec.csproj",
+  "projectFilePath": "D:\\gui\\Mobile\\12-06-23\\AppRgpEtec\\AppRpgEtec\\AppRpgEtec.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\etechas\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Maui.Graphics.Converters;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -24,5 +25,7 @@ namespace AppRpgEtec.Converters
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }
